@@ -1,0 +1,18 @@
+<!-- Auto pilot cars tesla --> 
+## __ *tesla cars *__ 
+* The Tesla system consists of two AI chips in order to support it for better road performance. Each of the AI chips makes a separate assessment of the traffic situation for guiding the car accordingly.
+* The assessment of both chips is then matched by the system and followed if the input from both is the same.
+Autopilot
+We develop and deploy autonomy at scale. We believe that an approach based on advanced AI for vision and planning, supported by efficient use of inference hardware is the only way to achieve a general solution to full self-driving.
+
+## __Hardware*__
+Build silicon chips that power our full self-driving software from the ground up, taking every small architectural and micro-architectural improvement into account while pushing hard to squeeze maximum silicon performance-per-watt. Perform floor-planning, timing and power analyses on the design. Write robust, randomized tests and scoreboards to verify functionality and performance. Implement compilers and drivers to program and communicate with the chip, with a strong focus on performance optimization and power savings. Finally, validate the silicon chip and bring it to mass production.
+
+## __ Neural Networks*__
+Apply cutting-edge research to train deep neural networks on problems ranging from perception to control. Our per-camera networks analyze raw images to perform semantic segmentation, object detection and monocular depth estimation. Our birds-eye-view networks take video from all cameras to output the road layout, static infrastructure and 3D objects directly in the top-down view. Our networks learn from the most complicated and diverse scenarios in the world, iteratively sourced from our fleet of nearly 1M vehicles in real time. A full build of Autopilot neural networks involves 48 networks that take 70,000 GPU hours to train . Together, they output 1,000 distinct tensors (predictions) at each timestep.
+
+## __Code Foundations*__
+Throughput, latency, correctness and determinism are the main metrics we optimize our code for. Build the Autopilot software foundations up from the lowest levels of the stack, tightly integrating with our custom hardware. Implement super-reliable bootloaders with support for over-the-air updates and bring up customized Linux kernels. Write fast, memory-efficient low-level code to capture high-frequency, high-volume data from our sensors, and to share it with multiple consumer processes— without impacting central memory access latency or starving critical functional code from CPU cycles. Squeeze and pipeline compute across a variety of hardware processing units, distributed across multiple system-on-chips.
+
+## __Evaluation Infrastructure*__
+Build open- and closed-loop, hardware-in-the-loop evaluation tools and infrastructure at scale, to accelerate the pace of innovation, track performance improvements and prevent regressions. Leverage anonymized characteristic clips from our fleet and integrate them into large suites of test cases. Write code simulating our real-world environment, producing highly realistic graphics and other sensor data that feed our Autopilot software for live debugging or automated testing.
